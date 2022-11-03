@@ -13,7 +13,9 @@
 		5280D7C32912FB9D00AB9502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5280D7C12912FB9D00AB9502 /* Main.storyboard */; };
 		5280D7C52912FBA000AB9502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5280D7C42912FBA000AB9502 /* Assets.xcassets */; };
 		5280D7C82912FBA000AB9502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5280D7C62912FBA000AB9502 /* LaunchScreen.storyboard */; };
-		52F8166F2914538E0045C26E /* ImageDSPUtils in Resources */ = {isa = PBXBuildFile; fileRef = 52F8166E2914538D0045C26E /* ImageDSPUtils */; };
+		52F816742914568D0045C26E /* VideoAnalgesic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F816732914568D0045C26E /* VideoAnalgesic.swift */; };
+		52F816782914570C0045C26E /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52F816772914570C0045C26E /* OpenCVBridge.mm */; };
+		52F8167C29145C950045C26E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8167B29145C950045C26E /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,11 @@
 		5280D7C42912FBA000AB9502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5280D7C72912FBA000AB9502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5280D7C92912FBA000AB9502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F8166E2914538D0045C26E /* ImageDSPUtils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImageDSPUtils; path = ../ImageDSPUtils; sourceTree = "<group>"; };
+		52F816732914568D0045C26E /* VideoAnalgesic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnalgesic.swift; sourceTree = "<group>"; };
+		52F81675291456FD0045C26E /* OpenCVBridge.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OpenCVBridge.hh; path = "../../../SMU/SMUF22/CS5323/Demonstrations/thirdFlipped copy/ImageDSPUtils/OpenCVBridge.hh"; sourceTree = "<group>"; };
+		52F816762914570C0045C26E /* AssignmentFour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentFour-Bridging-Header.h"; sourceTree = "<group>"; };
+		52F816772914570C0045C26E /* OpenCVBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVBridge.mm; path = "../../../SMU/SMUF22/CS5323/Demonstrations/thirdFlipped copy/ImageDSPUtils/OpenCVBridge.mm"; sourceTree = "<group>"; };
+		52F8167B29145C950045C26E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../SMU/SMUF22/CS5323/Demonstrations/thirdFlipped/ImageDSPUtils/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F8167C29145C950045C26E /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +49,8 @@
 		5280D7AF2912FB9D00AB9502 = {
 			isa = PBXGroup;
 			children = (
-				52F8166E2914538D0045C26E /* ImageDSPUtils */,
+				52F8167B29145C950045C26E /* opencv2.framework */,
+				52F81672291456190045C26E /* ImageDSPUtils */,
 				5280D7BA2912FB9D00AB9502 /* AssignmentFour */,
 				5280D7B92912FB9D00AB9502 /* Products */,
 			);
@@ -68,6 +76,17 @@
 				5280D7C92912FBA000AB9502 /* Info.plist */,
 			);
 			path = AssignmentFour;
+			sourceTree = "<group>";
+		};
+		52F81672291456190045C26E /* ImageDSPUtils */ = {
+			isa = PBXGroup;
+			children = (
+				52F81675291456FD0045C26E /* OpenCVBridge.hh */,
+				52F816772914570C0045C26E /* OpenCVBridge.mm */,
+				52F816732914568D0045C26E /* VideoAnalgesic.swift */,
+				52F816762914570C0045C26E /* AssignmentFour-Bridging-Header.h */,
+			);
+			path = ImageDSPUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +121,7 @@
 				TargetAttributes = {
 					5280D7B72912FB9D00AB9502 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -128,7 +148,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F8166F2914538E0045C26E /* ImageDSPUtils in Resources */,
 				5280D7C82912FBA000AB9502 /* LaunchScreen.storyboard in Resources */,
 				5280D7C52912FBA000AB9502 /* Assets.xcassets in Resources */,
 				5280D7C32912FB9D00AB9502 /* Main.storyboard in Resources */,
@@ -143,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5280D7C02912FB9D00AB9502 /* ViewController.swift in Sources */,
+				52F816742914568D0045C26E /* VideoAnalgesic.swift in Sources */,
 				5280D7BC2912FB9D00AB9502 /* AppDelegate.swift in Sources */,
 				5280D7BE2912FB9D00AB9502 /* SceneDelegate.swift in Sources */,
+				52F816782914570C0045C26E /* OpenCVBridge.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +310,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AssignmentFour/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -307,6 +333,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "CS-5323.AssignmentFour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageDSPUtils/AssignmentFour-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,9 +345,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AssignmentFour/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "CS-5323.AssignmentFour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageDSPUtils/AssignmentFour-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
