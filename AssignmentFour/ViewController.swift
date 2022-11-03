@@ -11,6 +11,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     let videoManager:VideoAnalgesic! = nil
+
     
     
     let bridge = OpenCVBridge()
