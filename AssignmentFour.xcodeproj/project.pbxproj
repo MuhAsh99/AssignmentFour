@@ -16,6 +16,8 @@
 		52F816742914568D0045C26E /* VideoAnalgesic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F816732914568D0045C26E /* VideoAnalgesic.swift */; };
 		52F816782914570C0045C26E /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52F816772914570C0045C26E /* OpenCVBridge.mm */; };
 		52F8167C29145C950045C26E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F8167B29145C950045C26E /* opencv2.framework */; };
+		52F8168029145E820045C26E /* ModB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8167F29145E820045C26E /* ModB.swift */; };
+		52F8168229145EA00045C26E /* ModA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8168129145EA00045C26E /* ModA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		52F816762914570C0045C26E /* AssignmentFour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentFour-Bridging-Header.h"; sourceTree = "<group>"; };
 		52F816772914570C0045C26E /* OpenCVBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVBridge.mm; path = "../../../SMU/SMUF22/CS5323/Demonstrations/thirdFlipped copy/ImageDSPUtils/OpenCVBridge.mm"; sourceTree = "<group>"; };
 		52F8167B29145C950045C26E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../SMU/SMUF22/CS5323/Demonstrations/thirdFlipped/ImageDSPUtils/opencv2.framework; sourceTree = "<group>"; };
+		52F8167F29145E820045C26E /* ModB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModB.swift; sourceTree = "<group>"; };
+		52F8168129145EA00045C26E /* ModA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				5280D7BB2912FB9D00AB9502 /* AppDelegate.swift */,
 				5280D7BD2912FB9D00AB9502 /* SceneDelegate.swift */,
 				5280D7BF2912FB9D00AB9502 /* ViewController.swift */,
+				52F8168129145EA00045C26E /* ModA.swift */,
+				52F8167F29145E820045C26E /* ModB.swift */,
 				5280D7C12912FB9D00AB9502 /* Main.storyboard */,
 				5280D7C42912FBA000AB9502 /* Assets.xcassets */,
 				5280D7C62912FBA000AB9502 /* LaunchScreen.storyboard */,
@@ -163,9 +169,11 @@
 			files = (
 				5280D7C02912FB9D00AB9502 /* ViewController.swift in Sources */,
 				52F816742914568D0045C26E /* VideoAnalgesic.swift in Sources */,
+				52F8168229145EA00045C26E /* ModA.swift in Sources */,
 				5280D7BC2912FB9D00AB9502 /* AppDelegate.swift in Sources */,
 				5280D7BE2912FB9D00AB9502 /* SceneDelegate.swift in Sources */,
 				52F816782914570C0045C26E /* OpenCVBridge.mm in Sources */,
+				52F8168029145E820045C26E /* ModB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
